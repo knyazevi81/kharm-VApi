@@ -19,16 +19,9 @@ class BaseReq:
             f"{base_url}/login",
             data=auth_data
         )
-        
-        
     
-    @classmethod
-    def get_list_users(cls) -> None:
-        respone = cls.session.post(f"{cls.base_url}/panel/inbound/list")
-        data = respone.json()
-        return data
-    
-
-if __name__ == "__main__":
-    print(BaseReq.get_list_users())
-
+    #@classmethod
+    #async def get_list_users(cls) -> None:
+    #    respone = cls.session.post(f"{cls.base_url}/panel/inbound/list")
+    #    data = respone.json()
+    #    return data
