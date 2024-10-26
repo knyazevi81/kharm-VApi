@@ -5,6 +5,7 @@ class Settings(BaseSettings):
     password: str
     base_url: str
     integration_token: str
+    host: str
 
     class Config:
         env_file = ".env"
